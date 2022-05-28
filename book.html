@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>petmart</title>
+    <style>
+        .head{
+           margin-top: 3.7rem;
+        }
+    </style>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body class="body">
+    <header>
+        <a href="#" class="logo"><span>pet </span>mart</a>
+        <nav class="navbar">
+            <a href="index.htm#home">Home</a>
+            
+            <a href="index.htm#purchase">purchase</a>
+            <a href="index.htm#services">Services</a>
+            <a href="index.htm#gallary">Gallery</a>
+           <!--<a href="#review">Review</a>--> 
+            <a href="index.htm#contact">contact</a>
+        </nav>
+        <div >
+           
+        </div>
+    </header>
+      
+        <section class="book" id="book">
+             <h1 class="heading head">
+                 <span>book</span> now</h1>
+             <div class="row">
+                 <div class="image">
+                     <img src="pic/Dog paw-amico.png" alt="">
+                 </div>
+                 <form action="">
+                     <div class="inputbox">
+                         <h3>petname</h3>
+                         <input type="text" readonly>
+                     </div>
+                     <div class="flex">
+                       <div class="inputbox">
+                          <h3>catagory</h3>
+                          <select name="" id="">
+                              <option value="">male</option>
+                              <option value="">female</option>
+                              <option value="">pair</option>
+                          </select>
+                        
+                        </div>
+                        <div class="inputbox">
+                          <h3>quantity</h3> 
+                          <select name="" id="">
+                              <option value="">1</option>
+                              <option value="">2</option>
+                              <option value="">3</option>
+                              <option value="">4</option>
+                              <option value="">5</option>
+                              <option value="">6</option>
+                          </select>
+                        </div>
+                          <div class="inputbox">
+                              <h3>age</h3> 
+                              <select name="" id="">
+                                  <option value="">1 month</option>
+                                  <option value="">2 month</option>
+                                  <option value="">3-6 month</option>
+                                  <option value="">7-9 month</option>
+                                  <option value="">10-11 month</option>
+                                  <option value="">1 year</option>
+                              </select>
+                          </div>
+                          <div class="inputbox">
+                              <h3>color</h3> 
+                              <select name="" id="">
+                                  <option value="">white</option>
+                                  <option value="">black</option>
+                                  <option value="">gold</option>
+                                  <option value="">black and white</option>
+                              </select>
+                          </div>
+                        </div>
+                    <div class="inputbox">
+                        <h3>price</h3>
+                        <input type="text" readonly name="" id="">
+                    </div>
+                    <div class="inputbox">
+                        <h3>pin code</h3>
+                        <input type="number"  placeholder="enter your pincode" required>
+                    </div>
+                    <!--<div class="inputbox">
+                        <h3>house number</h3>
+                        <input type="number"  placeholder="x-xx" required>
+                    </div>-->
+                    <div class="inputbox">
+                        <h3>address</h3>
+                        <textarea name="" id="" placeholder="enter your address"></textarea>
+                    </div>
+                    <div class="inputbox">
+                        <h3>contact number</h3>
+                        <input type="tel"  placeholder="xx-xxxxxxxxxx" pattern="[0-9]{2}-[0-9]{10}" required>
+                    </div>
+                    <input type="submit" class="btn" value="book now">
+                 </form>
+             </div>
+        </section>
+</body>
+<script src="script/js.js"></script>
+</html>

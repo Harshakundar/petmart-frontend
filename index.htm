@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>petmart</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body id="body">
+    <header>
+
+        <a href="#" class="logo"><span>pet </span>mart</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+
+            <a href="#purchase">purchase</a>
+            <a href="#services">Services</a>
+            <a href="#gallary">Gallery</a>
+            <!--<a href="#review">Review</a>-->
+            <a href="#contact">contact</a>
+        </nav>
+        <div class="icons">
+            <!-- <i class="fas fa-search" id="search-btn"></i>-->
+            <i class="fas fa-user" id="login-btn"></i>
+            <i class="fas fa-sign-out-alt"></i>
+
+        </div>
+        <!--<form action="" class="search-bar-container">
+            <input type="text" id="search-bar" placeholder="Search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>-->
+    </header>
+    <!--login form-->
+    <div class="login-form">
+
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <h3></h3>
+
+            <p>don't have an account? <a href="#register" id="regi">register now</a></p>
+        </form>
+        <form action="" class="register">
+            <h3>register</h3>
+            <input type="text" class="box" placeholder="enter yor first name" required>
+            <input type="text" class="box" placeholder=" enter your last name">
+            <input type="text" class="box" placeholder=" enter your user name">
+            <input type="email" class="box" placeholder="enter valid email address" required>
+            <input type="password" placeholder="enter password" class="box" required>
+            <input type="password" placeholder="confirm your password" class="box" required>
+            <input type="submit" class="btn" value="register now">
+            <h3></h3>
+            <p>already register? <a href="#login" id="login">login now</a></p>
+
+        </form>
+    </div>
+    <!--home section -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>until one has loud an animal a part of</h3>
+            <p> one's soul remain unawakened</p>
+
+        </div>
+        <div class="controls">
+            <span class="vid-btn active" data-src="pic/Cat - 95541.mp4"></span>
+            <span class="vid-btn" data-src="pic/Cat - 76496.mp4"></span>
+            <span class="vid-btn" data-src="pic/Dog - 77623.mp4"></span>
+            <span class="vid-btn" data-src="pic/Dog - 110227.mp4"></span>
+            <span class="vid-btn" data-src="pic/Parrot - 77785.mp4"></span>
+            <span class="vid-btn" data-src="pic/Parrot - 77784.mp4"></span>
+
+        </div>
+        <div class="video-container">
+            <video src="pic/Cat - 95541.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+    <!--book section
+        <section class="book" id="book">
+             <h1 class="heading">
+                 <span>b</span>
+                 <span>o</span>
+                 <span>o</span>
+                 <span>k</span>
+                 <span class="space"></span>
+                 <span>n</span>
+                 <span>o</span>
+                 <span>w</span>
+             </h1>
+             <div class="row">
+                 <div class="image">
+                     <img src="images/book-img.svg" alt="">
+                 </div>
+                 <form action="">
+                     <div class="inputbox">
+                         <h3>where to</h3>
+                         <input type="text" placeholder="place name..">
+                     </div>
+                     <div class="inputbox">
+                        <h3>how many</h3>
+                        <input type="number" placeholder="number of guests">
+                    </div>
+                    <div class="inputbox">
+                        <h3>arrival</h3>
+                        <input type="date" >
+                    </div>
+                    <div class="inputbox">
+                        <h3>leaving</h3>
+                        <input type="date">
+                    </div>
+                    <input type="submit" class="btn" value="book now">
+                 </form>
+             </div>
+        </section>-->
+    <!--package-->
+    <section class="package" id="purchase">
+        <h1 class="heading"><span>purc</span>hase</h1>
+        <div class="catagory">
+            <span class="btn rad" onclick="currentSlide(1)">dogs</span>
+            <span class="btn rad" onclick="currentSlide(2)">cats</span>
+            <span class="btn rad" onclick="currentSlide(3)">birds</span>
+        </div>
+        <br>
+        <div class="box-container slide">
+            <div class="box">
+                <img src="pic/labpupi2.jpg" alt="">
+                <div class="content">
+                    <h3 class="name">labrador dog</h3>
+                    <p>white 1year labrador dog</p>
+                    <div class="price"> Rs 6,9999 <span>Rs 10,000</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+                <div class="offer"><b>offer</b></div>
+            </div>
+            <div class="box">
+                <img src="pic/lab4.jpg" alt="">
+                <div class="content">
+                    <h3>bull dog</h3>
+                    <p>white 6 month dog</p>
+                    <div class="price"> Rs 7,999 <span>Rs 10,000</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="pic/germen1.jpg" alt="">
+                <div class="content">
+                    <h3>german shepherd</h3>
+                    <p>1year red and black dog</p>
+                    <div class="price"> Rs 9,999 <span>Rs 15,000</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="pic/glodpupi1.jpg" alt="">
+                <div class="content">
+                    <h3>golden retriver</h3>
+                    <p>1 month goalden retriver puppy</p>
+                    <div class="price"> Rs 8,999.99 <span>Rs 12,000.00</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="pic/pom1.jpg" alt="">
+                <div class="content">
+                    <h3>pomarian</h3>
+                    <p>1 year white pomerian dog </p>
+
+                    <div class="price"> Rs 5,999.99 <span>Rs 10,000.00</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="pic/gold2.jpg" alt="">
+                <div class="content">
+                    <h3>golden retriver</h3>
+                    <p>1 year golden retriver dog</p>
+
+                    <div class="price"> Rs 9,999.99<span>Rs 13,000.00</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="box-container slide">
+            <div class="box">
+                <img src="pic/cat-g1e0ac19bb_1920.jpg" alt="">
+                <div class="content">
+                    <h3>white cat</h3>
+                    <p>4 months white cat.</p>
+                    <div class="price"> Rs 4,999.99 <span>Rs 7,000</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+                <div class="offer"><b>offer</b></div>
+            </div>
+            <div class="box">
+                <img src="pic/cat-g974e78010_1920.jpg" alt="">
+                <div class="content">
+                    <h3>black and golden cat</h3>
+                    <p>1 year black and goalden cat</p>
+
+                    <div class="price"> Rs 5,999.99 <span>Rs 10,000.00</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="pic/cat-gedf83e161_1920.jpg" alt="">
+                <div class="content">
+                    <h3>cat</h3>
+                    <p>6 month cat</p>
+
+                    <div class="price"> Rs 3,999.99 <span>Rs 10,000.00</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="pic/cute-spitz-with-juice.jpg" alt="">
+                <div class="content">
+                    <h3>golden cat</h3>
+                    <p>7 month goalden color cat</p>
+
+                    <div class="price"> Rs 7,999.99 <span>Rs 10,000.00</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="pic/animal-g675d536b6_1920.jpg" alt="">
+                <div class="content">
+                    <h3>cat</h3>
+                    <p>4 month cat</p>
+
+                    <div class="price"> Rs 3,999.99 <span>Rs 7,000.00</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="pic/readhead-cat-sitting.jpg" alt="">
+                <div class="content">
+                    <h3>tiger cat</h3>
+                    <p>5 month cat</p>
+
+                    <div class="price"> Rs 4,999.99<span>Rs 10,000.00</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box-container slide">
+            <div class="box">
+                <img src="pic/bird1.jpg" alt="">
+                <div class="content">
+                    <h3>tiger cat</h3>
+                    <p>5 month cat</p>
+                    <div class="price"> Rs 4,999.99<span>Rs 10,000.00</span> </div>
+                    <a href="bookbird.html" class="btn">book now</a>
+                </div>
+                <div class="offer"><b>offer</b></div>
+            </div>
+            <div class="box">
+                <img src="pic/bird1.jpg" alt="">
+                <div class="content">
+                    <h3>tiger cat</h3>
+                    <p>5 month cat</p>
+
+                    <div class="price"> Rs 4,999.99<span>Rs 10,000.00</span> </div>
+                    <a href="bookbird.html" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="services" id="services">
+        <h3 class="heading"><span>future</span> services</h3>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-dog"></i>
+                <h3>grooming</h3>
+                <p>grooming is art and practice of cleaning and maintaining parts of the body it is a wonderful act of
+                    keeping your pet healthy </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-heartbeat"></i>
+                <h3>health checkup</h3>
+                <p>good health and good sences are two of the pets greatest blessing, to keeep it pet fit a health
+                    checkup is best way to do so </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-crutch"></i>
+                <h3>full vaccination</h3>
+                <p>as the health of the pet is an important aspect for its overall development it is nessary to
+                    completely vaccinated it.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-baseball-ball"></i>
+                <h3>activity zone</h3>
+                <p>there is no growth in comfort zone, there is no comfort in the growth zone, for both growth and
+                    comfort be provide activity zone </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bone"></i>
+                <h3>healthy food</h3>
+                <p>healthy pet is a good pet, to keep it healthy one it to provide enough food that is good and healthy.
+                    we will be providing healthy food to pet </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-capsules"></i>
+                <h3>authorised medicine</h3>
+                <p>when a pet is ill, all it needs is a caring owner and correct medicine, the owner will be caring but
+                    you can trust us with quality medicine</p>
+            </div>
+        </div>
+    </section>
+    <!--gallary-->
+    <section class="gallary" id="gallary">
+        <h1 class="heading"><span>gal</span>lery</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="pic/animal-g675d536b6_1920.jpg" id="gal" alt="">
+            </div>
+            <div class="box">
+                <img src="pic/bird1.jpg" id="gal" alt="">
+            </div>
+            <div class="box">
+                <img src="pic/rot2.jpg" id="gal" alt="">
+            </div>
+            <div class="box">
+                <img src="pic/bull3.jpg" id="gal" alt="">
+            </div>
+            <div class="box">
+                <img src="pic/bull2.jpg" id="gal" alt="">
+            </div>
+            <div class="box">
+                <img src="pic/daber2.jpg" id="gal" alt="">
+            </div>
+            <div class="box">
+                <img src="pic/cat-g974e78010_1920.jpg" id="gal" alt="">
+            </div>
+            <div class="box">
+                <img src="pic/cat-g1e0ac19bb_1920.jpg" id="gal" alt="">
+            </div>
+            <div class="box">
+                <img src="pic/readhead-cat-sitting.jpg" id="gal" alt="">
+            </div>
+        </div>
+        <section class="slidegal">
+            <div class="bx bx-x" id="close"></div>
+            <img id="expandImg">
+
+        </section>
+    </section>
+    <!--review
+        <h1 class="heading"><span>client</span> testimonial</h1>
+        <section class="review" id="review">
+            
+            <div class="content">
+               <form action="">
+                   <textarea name="" id="" cols="30" rows="10" placeholder="please enter your experience"></textarea><br>
+                   <input type="submit" value="add review" class="btn">
+               </form>
+               
+            </div>
+        
+            <div class="box-container" >
+        
+                <div class="box">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+                    <div class="user">
+                        <img src="images/pic1.png" alt="">
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <span>designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+                    <div class="user">
+                        <img src="images/pic2.png" alt="">
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <span>designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+                    <div class="user">
+                        <img src="images/pic3.png" alt="">
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <span>designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+                    <div class="user">
+                        <img src="images/pic4.png" alt="">
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <span>designer</span>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+        -->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <span>con</span>tact
+        </div>
+        <div class="row">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227.96388228016983!2d74.73919074104451!3d13.48602714112171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcbb6988329e8d%3A0xdfcf90a97dc7eddc!2sUdupi%2C%20Karnataka!5e1!3m2!1sen!2sin!4v1643724720890!5m2!1sen!2sin"
+                    height="552" width="450" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="info">
+                <h3> petmart</h3>
+                <h3>conatact number: +91-9876543210</h3>
+                <h3>email id: petmart@gmail.com,petmart@outlook.com</h3>
+                <h3> location: karnataka,India</h3>
+                <h3> Time 7.0AM - 8.0PM</h3>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+                <p>we are</p>
+            </div>
+            <div class="box">
+                <h3>branch location</h3>
+                <a href="#">banglore</a>
+                <a href="#">udupi</a>
+                <a href="#">manglore</a>
+                <a href="#">mumbai</a>
+                <a href="#">hydrabad</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home">home</a>
+                <a href="#book">Book</a>
+                <a href="#package">package</a>
+                <a href="#services">services</a>
+                <a href="#gallary">gallary</a>
+                <a href="#review">review</a>
+                <a href="#contact">contact</a>
+            </div>
+            <div class="box">
+                <h3>follw us on</h3>
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="box"><a class="terms" href="terms.html">terms & condition</a></div>
+        </div>
+    </section>
+    <script src="script/js.js"></script>
+</body>
+
+</html>
