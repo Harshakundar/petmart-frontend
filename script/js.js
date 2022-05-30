@@ -17,6 +17,14 @@ let catagory=document.querySelectorAll('.rad')
 //dark theme
 //let mode=document.getElementById("mode");
 //let body=document.getElementById('body')
+//notificattion
+let bell=document.querySelector('#bell')
+let notifi=document.querySelector('#notification')
+bell.addEventListener('click', () =>{
+    notifi.classList.toggle('activate');
+    bell.classList.toggle('fa-times');
+}
+)
 // registration form
 document.getElementById('regi').addEventListener('click',()=>{
     register.classList.add('view')
@@ -31,6 +39,7 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
     loginForm.classList.remove('active');
     gal.classList.remove('active');
+    notifi.classList.remove('active')
 }
 //gallary
 galopen.forEach(gal1=>{
