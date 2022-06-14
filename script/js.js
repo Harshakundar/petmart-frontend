@@ -22,7 +22,7 @@ let bell=document.querySelector('#bell')
 let notifi=document.querySelector('#notification')
 bell.addEventListener('click', () =>{
     notifi.classList.toggle('activate');
-    bell.classList.toggle('fa-times');
+   
 }
 )
 // registration form
@@ -39,7 +39,9 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
     loginForm.classList.remove('active');
     gal.classList.remove('active');
-    notifi.classList.remove('active')
+    notifi.classList.remove('activate')
+    
+
 }
 //gallary
 galopen.forEach(gal1=>{

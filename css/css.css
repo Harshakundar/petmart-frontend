@@ -344,16 +344,16 @@ header .search-bar-container label:hover{
     color: #666;
 }
 .notification {
- position: absolute;
- top:12%;
- z-index: 0;
- left:75%;
- min-height: 20rem;
- min-width: 20rem;
- max-width: auto;
- max-height: auto;
- background:rgba(0, 0, 0, 0.2);
- color: #fff;
+    position: fixed;
+    top: -120%;
+    z-index: 1000;
+    left:75%;
+    min-height: 20rem;
+    min-width: 20rem;
+    max-width: auto;
+    max-height: auto;
+    background:rgba(0, 0, 0, 0.2);
+    color: #fff;
  
 }
 .notification .box {
@@ -361,13 +361,13 @@ header .search-bar-container label:hover{
     padding: 1.5rem;
 }
 .notification .box  .box-content{
-    background: #333;
+    background: #444;
     padding: 1rem;
+    color: #eee;
 }
 
 .notification.activate{
-    z-index: 100;
-    left: 75%;
+    top: 10%;
 }
 section{
     padding: 2rem 10%;
@@ -673,8 +673,8 @@ textarea::-webkit-scrollbar-thumb{
     text-transform: uppercase;
 }
 .footer{
-    background: rgba( 0, 0, 0, 0.5 );
-    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
+    background: rgba( 0, 0, 0, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 255,255,255, .7 );
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
     border-radius: 10px;
@@ -682,13 +682,11 @@ textarea::-webkit-scrollbar-thumb{
    
 }
 .footer .box-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    width: fit-content; 
 }
 .footer .box-container .box{
-    padding: 1rem 0;
-    flex: 1 1 25rem;
+   padding: 0rem;
+   display: flex;
 }
 .footer .box-container .box h3{
     font-size: 1.5rem;
@@ -704,8 +702,7 @@ textarea::-webkit-scrollbar-thumb{
 .footer .box-container .box a{
     font-size: 2rem;
     color:var(--color);
-    padding: .7rem 0;
-    display: block;
+    padding: 1rem 10rem;
 }
 .footer .box-container .box a:hover{
     color: var(--pink);
