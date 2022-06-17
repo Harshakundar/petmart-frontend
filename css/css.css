@@ -153,7 +153,7 @@ header .search-bar-container label:hover{
   }
   .login-form form{
       margin: 2rem;
-      padding: 1.5rem 2rem;
+      padding: 1.5rem 1.5rem;
       border-radius: .5rem;
       background: #fff;
       width: 50rem;
@@ -175,17 +175,35 @@ header .search-bar-container label:hover{
     text-transform:capitalize;
 
 }
+
+.login-form form .input span{
+    font-size: 1.5rem;
+    position:relative;
+    bottom: 40px;
+    left: 16px;
+}
+
 .login-form form .box:focus{
     border-color: var(--pink);
 }
-
+.login-form form .box:focus ~ span
+{
+    color: #fc1e7b;
+    padding: 0 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: white;
+    bottom: 60px;
+}
 .login-form form .btn{
     display: block;
     width: 100%;
+    position: relative;
+    bottom: 10px;
 
 }
 .login-form form p{
-    padding: .5rem 0;
+    padding: .2rem 0;
     font-size: 1.5rem;
     color: #666;
 }
@@ -206,10 +224,10 @@ header .search-bar-container label:hover{
 .login-form .register{
    position: absolute;
    top: -120%;
-   left: 32.3%;
+   left: 32.4%;
 }
 .login-form .view{
-    top: 12%;
+    top: 4%;
 }
 .login-form form .message{
     font-size: 1.5rem;
@@ -386,6 +404,7 @@ section{
 }
 
 .package .box-container{
+    
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -691,14 +710,10 @@ textarea::-webkit-scrollbar-thumb{
 .footer .box-container .box h3{
     font-size: 1.5rem;
     color: var(--color);
-    padding: .7rem 0;
-    display: block;
+    padding: 1rem 52rem;
+    
 }
-.footer .box-container .box p{
-    font-size: 1.5rem;
-    color:var(--color);
-    padding: .7rem 0;
-}
+
 .footer .box-container .box a{
     font-size: 2rem;
     color:var(--color);
