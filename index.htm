@@ -46,20 +46,44 @@
         <form action="">
             <h3>login</h3>
             <h5 class="message"></h5>
-            <input type="email" class="box" placeholder="enter your email">
-            <input type="password" class="box" placeholder="enter your password">
+            <div class="input">
+            <input type="text" class="box">
+            <span>user name</span>
+            </div>
+            <div class="input">
+            <input type="password" class="box" >
+             <span>password</span>
+            </div>
             <input type="submit" value="login now" class="btn">
             <p>don't have an account? <a href="#register" id="regi">register now</a></p>
         </form>
         <form action="" class="register">
             <h3>register</h3>
             <h5 class="message"></h5>
-            <input type="text" class="box" placeholder="enter yor first name" required>
-            <input type="text" class="box" placeholder=" enter your last name">
-            <input type="text" class="box" placeholder=" enter your user name">
-            <input type="email" class="box" placeholder="enter valid email address" required>
-            <input type="password" placeholder="enter password" class="box" required>
-            <input type="password" placeholder="confirm your password" class="box" required>
+            <div class="input">
+            <input type="text" class="box" required>
+            <span>first name</span>
+            </div>
+            <div class="input">
+            <input type="text" class="box">
+            <span>last name</span>
+            </div>
+            <div class="input">
+            <input type="text" class="box" placeholder=" ">
+            <span>user name</span>
+            </div>
+            <div class="input">
+            <input type="email" class="box" placeholder="" required>
+            <span>email</span>
+            </div>
+            <div class="input">
+            <input type="password" placeholder="" class="box" required>
+            <span>password</span>
+            </div>
+            <div class="input">
+            <input type="password" placeholder="" class="box" required>
+            <span>confirm password</span>
+            </div>
             <input type="submit" class="btn" value="register now">
             <h3></h3>
             <p>already register? <a href="#login" id="login">login now</a></p>
@@ -450,17 +474,8 @@
     </section>
     <section class="footer">
         <div class="box-container">
-          <div class="box">
-                <a href="#home">home</a>
-                
-                <a href="#purchase">package</a>
-                <a href="#services">services</a>
-                <a href="#gallary">gallary</a>
-                
-                <a href="#contact">contact</a>
-            </div>
-            
-            <div class="box"><a class="terms" href="terms.html">terms & condition</a></div>
+            <div class="box"><h3>copy&copy; @2022</h3></div>
+           <div class="box"><a class="terms" href="terms.html">terms & condition</a></div>
         </div>
     </section>
     <script src="script/js.js"></script>

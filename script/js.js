@@ -126,12 +126,13 @@ function currentSlide(n) {
   function showslides(n) {
     let i;
     for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+      slides[i].style.display = "none";
     }
     for (i = 0; i < catagory.length; i++) {
       catagory[i].className = catagory[i].className.replace(" pack", "");
     }
-    slides[slideindex-1].style.display = "flex";  
+    slides[slideindex-1].style.display = "flex"; 
+    slides[slideindex-1].style.transition = 10; 
      
     catagory[slideindex-1].className += " pack";
  }

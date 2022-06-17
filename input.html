@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            gap: 30px;
+            background: #1d2b3a;
+           }
+        .input{
+            position: relative;
+            width: 250px;
+        }
+        .input input{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid rgba(255,255,255,0.25);
+            background: #1d2b3a;
+            border-radius: 5px;
+            outline: none;
+            color:#fff;
+        }
+        .input span{
+            position: absolute;
+            left: 0;
+            padding: 10px;
+            pointer-events: none;
+            font-size: 1rem;
+            color: rgba(255,255,255,0.25);
+            text-transform: uppercase;
+            transition: 0.5s;
+        }
+        .input input:valid ~ span,
+        .input input:focus ~ span{
+            color: #00dfc4;
+            transform: translateX(10px) translateY(-7px);
+            font-size: 0.65em;
+            padding: 0 10px;
+            background: #1d2b3a;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="input">
+        <input type="text" required="required">
+        <span>first name</span>
+    </div>
+    <div class="input">
+        <input type="text" required="required">
+        <span>last name</span>
+    </div>
+</body>
+</html>
