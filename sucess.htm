@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css.css">
+    <style>
+        img {
+            height: 71.15rem;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .info {
+            margin-bottom: 20rem;
+            font-size: 5rem;
+            color: azure;
+            padding: 7rem 6%;
+        }
+
+        .info .icon i {
+            padding: 5rem;
+            margin-left: 45rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            color: #fc1e7b;
+        }
+
+        .info .content {}
+
+        .info .content span {
+            color: #333;
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="{% static 'pic\icon-gfde50e290_1920.png' %}">
+    <section class="login-form">
+        <a href="/" id="form-close"><i class="fas fa-arrow-left"></i></a>
+        <div class="info">
+            <div class="heading"><span>thankyou</span></div>
+            <div class="icon"><i class="fas fa-check"></i></div>
+            <div class="content">your order for <span>{{p_name}}</span> have been placed sucessfully</div>
+        </div>
+    </section>
+</body>
+
+</html>

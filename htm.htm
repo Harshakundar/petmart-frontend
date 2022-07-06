@@ -1,0 +1,63 @@
+pic/
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery .gallery-container {
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            gap: 2rem;
+        }
+
+        .gallery .gallery-container .box {
+            height: 25rem;
+            overflow: hidden;
+        }
+
+        .gallery .gallery-container .box:hover img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        .gallery .gallery-container .box img {
+            height: 100%;
+            width: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+</head>
+
+<body>
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading"> our <span>gallery</span> </h1>
+
+        <div class="gallery-container">
+
+            <a class="box" href="pic/animal-g675d536b6_1920.jpg"><img src="pic/animal-g675d536b6_1920.jpg" alt=""></a>
+            <a class="box" href="pic/bird1.jpg"><img src="pic/bird1.jpg" alt=""></a>
+            <a class="box" href="pic/bull1.jpg"><img src="pic/bull1.jpg" alt=""></a>
+            <a class="box" href="pic/bull3.jpg"><img src="pic/bull3.jpg" alt=""></a>
+            <a class="box" href="pic/cat-g1e0ac19bb_1920.jpg"><img src="pic/cat-g1e0ac19bb_1920.jpg" alt=""></a>
+            <a class="box" href="pic/daber1.jpg"><img src="pic/daber1.jpg" alt=""></a>
+
+        </div>
+
+    </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+<script>
+    lightGallery(document.querySelector('.gallery .gallery-container'));
+</script>
+
+</html>

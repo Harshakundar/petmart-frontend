@@ -10,6 +10,7 @@
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/css.css">
@@ -34,71 +35,39 @@
             <i class="fas fa-sign-out-alt"></i>
             <i class="fas fa-bell" id="bell"></i>
         </div>
+
         <!--<form action="" class="search-bar-container">
             <input type="text" id="search-bar" placeholder="Search here...">
             <label for="search-bar" class="fas fa-search"></label>
         </form>-->
     </header>
-    <!--login form-->
-    <div class="login-form">
-
-        <i class="fas fa-times" id="form-close"></i>
-        <form action="">
-            <h3>login</h3>
-            <h5 class="message"></h5>
-            <div class="input">
-            <input type="text" class="box">
-            <span>user name</span>
-            </div>
-            <div class="input">
-            <input type="password" class="box" >
-             <span>password</span>
-            </div>
-            <input type="submit" value="login now" class="btn">
-            <p>don't have an account? <a href="#register" id="regi">register now</a></p>
-        </form>
-        <form action="" class="register">
-            <h3>register</h3>
-            <h5 class="message"></h5>
-            <div class="input">
-            <input type="text" class="box" required>
-            <span>first name</span>
-            </div>
-            <div class="input">
-            <input type="text" class="box">
-            <span>last name</span>
-            </div>
-            <div class="input">
-            <input type="text" class="box" placeholder=" ">
-            <span>user name</span>
-            </div>
-            <div class="input">
-            <input type="email" class="box" placeholder="" required>
-            <span>email</span>
-            </div>
-            <div class="input">
-            <input type="password" placeholder="" class="box" required>
-            <span>password</span>
-            </div>
-            <div class="input">
-            <input type="password" placeholder="" class="box" required>
-            <span>confirm password</span>
-            </div>
-            <input type="submit" class="btn" value="register now">
-            <h3></h3>
-            <p>already register? <a href="#login" id="login">login now</a></p>
-
-        </form>
+    <div class="dropdown">
+        <div class="box">
+            <a href="">register <i class="fas fa-user-plus"></i></a>
+        </div>
+        <div class="box">
+            <a href="">login <i class="fas fa-sign-in-alt"></i></a>
+        </div>
     </div>
     <div class="notification" id="notification">
-       <div class="box"><span class="box-content">product name</span> <span class="box-content"> delivery status </span></div>
-       <div class="box"><span class="box-content">product name</span> <span class="box-content"> delivery status </span></div>
-       <div class="box"><span class="box-content">product name</span> <span class="box-content"> delivery status </span></div>
-       <div class="box"><span class="box-content">product name</span> <span class="box-content"> delivery status </span></div>
-       <div class="box"><span class="box-content">product name</span> <span class="box-content"> delivery status </span></div>
-       <div class="box"><span class="box-content">product name</span> <span class="box-content"> delivery status </span></div>
-       <div class="box"><span class="box-content">product name</span> <span class="box-content"> delivery status </span></div>
-       <div class="box"><span class="box-content">product name</span> <span class="box-content"> delivery status </span></div>
+        <table class="box">
+            <tr>
+                <th class="box-content">product name</th>
+                <th class="box-content">delivery status</th>
+            </tr>
+            <tr>
+                <td class="box-content">product name</td>
+                <td class="box-content">delivery status delivery status</td>
+            </tr>
+            <tr>
+                <td class="box-content">product name</td>
+                <td class="box-content">delivery status delivery status</td>
+            </tr>
+            <tr>
+                <td class="box-content">product name</td>
+                <td class="box-content">delivery status delivery status</td>
+            </tr>
+        </table>
 
     </div>
     <!--home section -->
@@ -110,11 +79,11 @@
         </div>
         <div class="controls">
             <span class="vid-btn active" data-src="pic/Cat - 95541.mp4"></span>
-            <span class="vid-btn" data-src="pic/Cat - 76496.mp4"></span>
-            <span class="vid-btn" data-src="pic/Dog - 77623.mp4"></span>
-            <span class="vid-btn" data-src="pic/Dog - 110227.mp4"></span>
-            <span class="vid-btn" data-src="pic/Parrot - 77785.mp4"></span>
-            <span class="vid-btn" data-src="pic/Parrot - 77784.mp4"></span>
+            <span class="vid-btn src1" data-src="pic/Cat - 76496.mp4"></span>
+            <span class="vid-btn src2" data-src="pic/Dog - 77623.mp4"></span>
+            <span class="vid-btn src3" data-src="pic/Dog - 110227.mp4"></span>
+            <span class="vid-btn src4" data-src="pic/Parrot - 77785.mp4"></span>
+            <span class="vid-btn src5" data-src="pic/Parrot - 77784.mp4"></span>
 
         </div>
         <div class="video-container">
@@ -171,29 +140,32 @@
             <div class="box">
                 <img src="pic/labpupi2.jpg" alt="">
                 <div class="content">
+                    <p style="display:none" id="id">101</p>
                     <h3 class="name">labrador dog</h3>
                     <p>white 1year labrador dog</p>
-                    <div class="price"> Rs 6,9999 <span>Rs 10,000</span> </div>
-                    <a href="book.html" class="btn">book now</a>
+                    <div class="price"> Rs 69999 </div>
+                    <a class="btn get">book now</a>
                 </div>
                 <div class="offer"><b>offer</b></div>
             </div>
             <div class="box">
                 <img src="pic/lab4.jpg" alt="">
                 <div class="content">
-                    <h3>bull dog</h3>
+                    <p style="display:none" id="id">102</p>
+                    <h3 class="name">bull dog</h3>
                     <p>white 6 month dog</p>
-                    <div class="price"> Rs 7,999 <span>Rs 10,000</span> </div>
-                    <a href="book.html" class="btn">book now</a>
+                    <div class="price"> Rs 7999 <span>Rs 10,000</span> </div>
+                    <a href="book.html" class="btn get">book now</a>
                 </div>
             </div>
             <div class="box">
                 <img src="pic/germen1.jpg" alt="">
                 <div class="content">
-                    <h3>german shepherd</h3>
+                    <p style="display:none" id="id">101</p>
+                    <h3 class="name">german shepherd</h3>
                     <p>1year red and black dog</p>
-                    <div class="price"> Rs 9,999 <span>Rs 15,000</span> </div>
-                    <a href="book.html" class="btn">book now</a>
+                    <div class="price"> Rs 9999 <span>Rs 15,000</span> </div>
+                    <a href="book.html" class="btn get">book now</a>
                 </div>
             </div>
             <div class="box">
@@ -201,7 +173,7 @@
                 <div class="content">
                     <h3>golden retriver</h3>
                     <p>1 month goalden retriver puppy</p>
-                    <div class="price"> Rs 8,999.99 <span>Rs 12,000.00</span> </div>
+                    <div class="price"> Rs 8999.99 <span>Rs 12,000.00</span> </div>
                     <a href="book.html" class="btn">book now</a>
                 </div>
             </div>
@@ -211,7 +183,7 @@
                     <h3>pomarian</h3>
                     <p>1 year white pomerian dog </p>
 
-                    <div class="price"> Rs 5,999.99 <span>Rs 10,000.00</span> </div>
+                    <div class="price"> Rs 5999.99 <span>Rs 10,000.00</span> </div>
                     <a href="book.html" class="btn">book now</a>
                 </div>
             </div>
@@ -279,16 +251,7 @@
                     <a href="book.html" class="btn">book now</a>
                 </div>
             </div>
-            <div class="box">
-                <img src="pic/readhead-cat-sitting.jpg" alt="">
-                <div class="content">
-                    <h3>tiger cat</h3>
-                    <p>5 month cat</p>
 
-                    <div class="price"> Rs 4,999.99<span>Rs 10,000.00</span> </div>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
 
         </div>
 
@@ -360,41 +323,23 @@
     <!--gallary-->
     <section class="gallary" id="gallary">
         <h1 class="heading"><span>gal</span>lery</h1>
-        <div class="box-container">
-            <div class="box">
-                <img src="pic/animal-g675d536b6_1920.jpg" id="gal" alt="">
-            </div>
-            <div class="box">
-                <img src="pic/bird1.jpg" id="gal" alt="">
-            </div>
-            <div class="box">
-                <img src="pic/rot2.jpg" id="gal" alt="">
-            </div>
-            <div class="box">
-                <img src="pic/bull3.jpg" id="gal" alt="">
-            </div>
-            <div class="box">
-                <img src="pic/bull2.jpg" id="gal" alt="">
-            </div>
-            <div class="box">
-                <img src="pic/daber2.jpg" id="gal" alt="">
-            </div>
-            <div class="box">
-                <img src="pic/cat-g974e78010_1920.jpg" id="gal" alt="">
-            </div>
-            <div class="box">
-                <img src="pic/cat-g1e0ac19bb_1920.jpg" id="gal" alt="">
-            </div>
-            <div class="box">
+        <div class="gallery-container">
+            <a class="box" href="pic/animal-g675d536b6_1920.jpg"><img src="pic/animal-g675d536b6_1920.jpg" alt=""></a>
+            <a class="box" href="pic/bird1.jpg"><img src="pic/bird1.jpg" alt=""></a>
+            <a class="box" href="pic/bull1.jpg"><img src="pic/bull1.jpg" alt=""></a>
+            <a class="box" href="pic/bull3.jpg"><img src="pic/bull3.jpg" alt=""></a>
+            <a class="box" href="pic/cat-g1e0ac19bb_1920.jpg"><img src="pic/cat-g1e0ac19bb_1920.jpg" alt=""></a>
+            <a class="box" href="pic/daber1.jpg"><img src="pic/daber1.jpg" alt=""></a>
+            <!-- <div class="box">
                 <img src="pic/readhead-cat-sitting.jpg" id="gal" alt="">
-            </div>
+            </div>-->
         </div>
-        <section class="slidegal">
+        <!--<section class="slidegal">
             <div class="bx bx-x" id="close"></div>
-            <img id="expandImg">
+            <img id="expandImg">-->
 
-        </section>
     </section>
+
     <!--review
         <h1 class="heading"><span>client</span> testimonial</h1>
         <section class="review" id="review">
@@ -459,9 +404,7 @@
         </div>
         <div class="row">
             <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227.96388228016983!2d74.73919074104451!3d13.48602714112171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcbb6988329e8d%3A0xdfcf90a97dc7eddc!2sUdupi%2C%20Karnataka!5e1!3m2!1sen!2sin!4v1643724720890!5m2!1sen!2sin"
-                    height="552" width="450" allowfullscreen="" loading="lazy"></iframe>
+                <img src="pic/map-gfc45ddcce_1920.jpg" alt="">
             </div>
             <div class="info">
                 <h3> petmart</h3>
@@ -474,11 +417,20 @@
     </section>
     <section class="footer">
         <div class="box-container">
-            <div class="box"><h3>copy&copy; @2022</h3></div>
-           <div class="box"><a class="terms" href="terms.html">terms & condition</a></div>
+            <div class="box">
+                <h3>copy&copy; @2022</h3>
+            </div>
+            <div class="box"><a class="terms" href="terms.html">terms & condition</a></div>
         </div>
     </section>
     <script src="script/js.js"></script>
+    <script src="script/user.js"></script>
+    <script src="script/order.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script>
+        lightGallery(document.querySelector('.gallary .gallery-container'));
+    </script>
+
 </body>
 
 </html>
